@@ -1,11 +1,10 @@
-# projeto MyFoods
-MyFoods targets small business food delivery service, it allows product and client management and a simply and fast way to order food.
+# projeto Shortly
 
 <p align="center">
-  <img  src="https://comer-gravida.net/wp-content/uploads/2019/10/pizza7.png">
+  <img  src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1fa73.svg">
 </p>
 <h1 align="center">
-  MyFoods
+  Shortly
 </h1>
 <div align="center">
 
@@ -27,17 +26,6 @@ MyFoods targets small business food delivery service, it allows product and clie
 <br/>
 
 # Description
-
-The idea of this project was to build something of my own, it might not be the most original one but represents something that i use almost everyday,
-and so i choose to create my small version of a food delivery app, i took inspiration on iFood.
-
-The site has two parts, one for the admin, there he can manage all categories and products whole CRUD logic.
-The second part deal with the consumers, here the client can check products ordered by category, he can also add products to cart before finish his purchase and see his address info on user page.
-On cart page he can remove a single product or clean it.
-When finish purchase a pop-up will appear with all purchase and delivery information, the consumer will add his number on a field-box and then confirm, it will redirect the message to WhatsApp Web and send to the store.
-
-On this version only CEPs of the city of Fortaleza are allowed but you can easily add/remove out of delivery range areas through .env .
-
 </br>
 
 ## Features
@@ -140,7 +128,6 @@ GET /user/info
 ### Get user purchases info
 
 ```
-https://myfoods-vieira.herokuapp.com
 GET /user/purchase/info
 ```
 
@@ -187,7 +174,6 @@ GET /user/purchase/info
 ### Get daily purchases info
 
 ```
-https://myfoods-vieira.herokuapp.com
 POST /admin/purchase/info
 ```
 
@@ -241,7 +227,6 @@ POST /admin/purchase/info
 ### Create a new category
 
 ```
-https://myfoods-vieira.herokuapp.com/
 POST /categories/create
 ```
 
@@ -275,7 +260,6 @@ status: 201
 ### View categories.
 
 ```
-https://myfoods-vieira.herokuapp.com
 GET /categories
 ```
 
@@ -314,7 +298,6 @@ GET /categories
 ### Edit category
 
 ```
-https://myfoods-vieira.herokuapp.com
 PATCH /categories/:id
 ```
 
@@ -352,7 +335,6 @@ PATCH /categories/:id
 ### Delete category
 
 ```
-https://myfoods-vieira.herokuapp.com
 DELETE /categories/delete/:id
 ```
 
@@ -380,7 +362,6 @@ status: 202
 ### View products by category
 
 ```
-https://myfoods-vieira.herokuapp.com
 GET /products?category=
 ```
 
@@ -430,7 +411,6 @@ GET /products?category=
 ### View all products
 
 ```
-https://myfoods-vieira.herokuapp.com
 GET /products/all
 ```
 
@@ -476,7 +456,6 @@ GET /products/all
 ### Create new product
 
 ```
-https://myfoods-vieira.herokuapp.com
 POST /products/create
 ```
 
@@ -509,7 +488,6 @@ status: 201
 ### Edit product
 
 ```
-https://myfoods-vieira.herokuapp.com
 PATCH /products/edit/:id
 ```
 
@@ -548,7 +526,6 @@ status: 202
 ### Delete product
 
 ```
-https://myfoods-vieira.herokuapp.com
 DELETE /products/delete/:id
 ```
 
@@ -576,7 +553,6 @@ status: 202
 ### Add to cart
 
 ```
-https://myfoods-vieira.herokuapp.com
 POST /cart/add
 ```
 
@@ -604,7 +580,6 @@ status: 201
 ### View cart products
 
 ```
-https://myfoods-vieira.herokuapp.com
 GET /cart/list
 ```
 
@@ -658,7 +633,6 @@ GET /cart/list
 ### Remove product from cart
 
 ```
-https://myfoods-vieira.herokuapp.com
 DELETE /cart/remove?product=${productId}&item=${id}&quantity=${quantity}
 ```
 
@@ -687,7 +661,6 @@ status: 200
 ### Remove all products from cart
 
 ```
-https://myfoods-vieira.herokuapp.com
 DELETE /cart/cancel
 ```
 
@@ -710,7 +683,6 @@ status: 200
 ### Clean cart after purchase
 
 ```
-https://myfoods-vieira.herokuapp.com
 DELETE /cart/clean
 ```
 
