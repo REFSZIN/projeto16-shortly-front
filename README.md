@@ -845,7 +845,7 @@ In this project i've improved my skills, like tests were more easier and fast, i
 
 ## Authors
 
--   Ryan Nicholas is a student at Driven Education and is putting effort into it to become a Dev.
+-   Yan Matheus is a student at Driven Education and is putting effort into it to become a Dev.
 <br/>
 
 #
